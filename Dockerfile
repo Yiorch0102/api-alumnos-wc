@@ -21,5 +21,15 @@ COPY --from=build /app/target/alumnos-0.0.1-SNAPSHOT.jar app.jar
 # Exponer el puerto 8080 (aunque Render lo maneja)
 EXPOSE 8080
 
+# --- CONFIGURACIÓN AÑADIDA ---
+# Healthcheck para decirle a Render que espere a que la app arranque
+HEALTHCHECK \
+    --interval=30s \
+    --timeout=5s \
+    --start-period=180s \
+    --retries=3 \
+    CMD curl -f http://localhost:8080/api/alumnos || exit 1
+# --- FIN DE LA CONFIGURACIÓN ---
+
 # Comando para ejecutar la aplicación
 ENTRYPOINT ["java", "-jar", "app.jar"]
