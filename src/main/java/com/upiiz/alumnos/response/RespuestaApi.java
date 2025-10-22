@@ -2,7 +2,7 @@ package com.upiiz.alumnos.response;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
-// Usamos genéricos (<T>) para que 'valores' pueda ser un Alumno, una Lista<Alumno>, etc.
+
 public class RespuestaApi<T> {
 
     @Schema(description = "Estado de la operación (ej. OK, CREATED, NOT_FOUND)", example = "OK")

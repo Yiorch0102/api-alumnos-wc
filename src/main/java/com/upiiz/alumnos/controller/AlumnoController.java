@@ -92,6 +92,6 @@ public class AlumnoController {
     public ResponseEntity<RespuestaApi<Object>> eliminarAlumno(@PathVariable Long id) {
         alumnoService.eliminarAlumno(id);
         RespuestaApi<Object> respuesta = new RespuestaApi<>("OK", "Eliminación exitosa");
-        return ResponseEntity.ok(respuesta); // 200 (o 204 No Content si no devuelves cuerpo)
+        return ResponseEntity.ok(respuesta); // 200
     }
 }

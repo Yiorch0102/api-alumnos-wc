@@ -2,7 +2,6 @@ package com.upiiz.alumnos.service;
 
 import com.upiiz.alumnos.entity.Alumno;
 import com.upiiz.alumnos.repository.AlumnoRepository;
-// Crearemos estas excepciones personalizadas en el siguiente paso
 import com.upiiz.alumnos.exception.DataConflictException;
 import com.upiiz.alumnos.exception.ResourceNotFoundException;
 

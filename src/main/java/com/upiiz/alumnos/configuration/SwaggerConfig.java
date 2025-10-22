@@ -11,10 +11,10 @@ import org.springframework.context.annotation.Configuration;
 @OpenAPIDefinition(
         info = @Info(
                 title = "API de Gestión de Alumnos",
-                version = "1.0.0", // Basado en tu imagen de versionado
+                version = "1.0.0",
                 description = "API REST para el ejercicio 07 de la clase WC.",
                 contact = @Contact(
-                        name = "E.A.M.", // De tu nomenclatura de archivo
+                        name = "E.A.M.",
                         email = "tu-correo@upiiz.com",
                         url = "https://www.upiiz.ipn.mx"
                 ),
@@ -30,5 +30,5 @@ import org.springframework.context.annotation.Configuration;
         }
 )
 public class SwaggerConfig {
-    // Esta clase solo necesita las anotaciones
+
 }
